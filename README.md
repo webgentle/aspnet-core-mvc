@@ -42,6 +42,7 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 13. [Controller in Asp.Net Core MVC](https://www.youtube.com/watch?v=KxIMpq2btKs&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=13)
 14. [Model in Asp.Net core](https://www.youtube.com/watch?v=A_LPA_c41TM&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=14)
 15. [View in asp.net core application](https://www.youtube.com/watch?v=xfFQQd3m4yE&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=15)
+16. [How controller finds a view (View Discovery) | Different way to return view from action method](https://www.youtube.com/watch?v=KRd-IHNRc3Y&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=16)
 
 To be added...
 

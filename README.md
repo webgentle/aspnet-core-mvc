@@ -43,6 +43,10 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 14. [Model in Asp.Net core](https://www.youtube.com/watch?v=A_LPA_c41TM&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=14)
 15. [View in asp.net core application](https://www.youtube.com/watch?v=xfFQQd3m4yE&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=15)
 16. [How controller finds a view (View Discovery) | Different way to return view from action method](https://www.youtube.com/watch?v=KRd-IHNRc3Y&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=16)
+17. [Razor ViewEngine in Asp.Net Core](https://www.youtube.com/watch?v=U2DZMDcAke0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=17)
+18. [Conditional statements (If, Else, Ternary Operator, Switch) in Razor](https://www.youtube.com/watch?v=CayKF6qxVRI&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=18)
+19. [For & ForEach Loop in Razor Syntax](https://www.youtube.com/watch?v=i41vf2l62hI&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=19)
+20. [Static files (Img, css & js) in asp.net core](https://www.youtube.com/watch?v=L7J5jI6-9r4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=20)
 
 To be added...
 

@@ -1,7 +1,11 @@
 ﻿body {
 }
 
-.logo{
-    height:200px;
-    width:200px;
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.jumbotron {
+    background: none;
 }

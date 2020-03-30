@@ -47,6 +47,12 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 18. [Conditional statements (If, Else, Ternary Operator, Switch) in Razor](https://www.youtube.com/watch?v=CayKF6qxVRI&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=18)
 19. [For & ForEach Loop in Razor Syntax](https://www.youtube.com/watch?v=i41vf2l62hI&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=19)
 20. [Static files (Img, css & js) in asp.net core](https://www.youtube.com/watch?v=L7J5jI6-9r4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=20)
+21. [How to install & use client side library (jQuery & Bootstrap) in asp.net core ](https://www.youtube.com/watch?v=VwqozSbQuec&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=21)
+22. [Razor file compilation in asp.net core](https://www.youtube.com/watch?v=ctB8GvRouSQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=22)
+23. [Layout in asp.net core](https://www.youtube.com/watch?v=Kv7JEOUuOdI&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=23)
+24. [Design a responsive home page for real-time application (Book Store)](https://www.youtube.com/watch?v=bVGontQCB_I&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=24)
+25. [How to add navigation bar (navbar) in asp.net core application](https://www.youtube.com/watch?v=4pBWKbJ9nL0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=25)
+26. [How to add footer in asp.net core application](https://www.youtube.com/watch?v=A6pyEv4EH4I&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=26)
 
 To be added...
 

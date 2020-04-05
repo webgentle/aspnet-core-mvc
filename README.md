@@ -53,6 +53,8 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 24. [Design a responsive home page for real-time application (Book Store)](https://www.youtube.com/watch?v=bVGontQCB_I&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=24)
 25. [How to add navigation bar (navbar) in asp.net core application](https://www.youtube.com/watch?v=4pBWKbJ9nL0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=25)
 26. [How to add footer in asp.net core application](https://www.youtube.com/watch?v=A6pyEv4EH4I&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=26)
+27. [Display Model list data on view in Asp.Net Core](https://www.youtube.com/watch?v=CuA_pgkXqf0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=27)
+28. [RenderSection & Section in Asp.Net Core](https://www.youtube.com/watch?v=a0VMZ0reVXU&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=28)
 
 To be added...
 

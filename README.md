@@ -55,6 +55,10 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 26. [How to add footer in asp.net core application](https://www.youtube.com/watch?v=A6pyEv4EH4I&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=26)
 27. [Display Model list data on view in Asp.Net Core](https://www.youtube.com/watch?v=CuA_pgkXqf0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=27)
 28. [RenderSection & Section in Asp.Net Core](https://www.youtube.com/watch?v=a0VMZ0reVXU&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=28)
+29. [Design and develop a product detail page in asp.net core](https://www.youtube.com/watch?v=elJgXm1Fc80&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=29)
+30. [_ViewStart.cshtml file in asp.Net core](https://www.youtube.com/watch?v=ZiB1vqj-Y1g&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=30)
+31. [_ViewImports file in asp.net core](https://www.youtube.com/watch?v=rdag_suOGj4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=31)
+
 
 To be added...
 

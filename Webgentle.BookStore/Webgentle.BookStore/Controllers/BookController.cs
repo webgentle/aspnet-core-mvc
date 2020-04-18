@@ -24,6 +24,7 @@ namespace Webgentle.BookStore.Controllers
             return View(data);
         }
 
+        [Route("book-details/{id}", Name ="bookDetailsRoute")]
         public ViewResult GetBook(int id)
         {
             var data = _bookRepository.GetBookById(id);

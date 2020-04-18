@@ -3,7 +3,6 @@
 }
 @model IEnumerable<BookModel>
 
-
 <div class="container">
     <h3 class="display-4">All books</h3>
     <div class="row">
@@ -18,7 +17,8 @@
                         <p class="card-text">@book.Description</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/book/getbook/@book.Id" class="btn btn-sm btn-outline-secondary">View details</a>
+                                <a asp-route="bookDetailsRoute" asp-route-id="@book.Id"
+                                   class="btn btn-sm btn-outline-secondary">View details</a>
                             </div>
                             <small class="text-muted">@book.Author</small>
                         </div>

@@ -17,11 +17,11 @@ All professionals who wants to start their career in asp.net core framework and 
 ## Key features of this course:
 * Free of cost - No need to pay anything
 * Complete and step by step solution
-* English language - Tutorial is available in english language
+* English language - Tutorial is available in English language
 * Excellent combination of Theory, practical example & Live application.
 
-## PreRequisite:
-No special knowlenge is required for this tutorial. But it will be helpful if have basic knowledge of
+## Prerequisite:
+No special knowledge is required for this tutorial. But it will be helpful if have basic knowledge of
 * C# (Class, Method, Property etc.)
 * OOPS Concepts
 * HTML & CSS

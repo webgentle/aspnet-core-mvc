@@ -1,27 +1,27 @@
-# Asp.Net Core MVC 3.1 tutorial with Live application by Nitish
+# Asp.Net Core MVC 3.1 tutorial with live application by Nitish
 Welcome to Asp.Net Core MVC tutorial. This is a complete and step by step tutorial for all the developers.
 
-## Webgentle Free YouTube video:
-You can learn asp.net core mvc tutorial from webgentle youtube channel free of cost.
+## WebGentle Free YouTube video:
+You can learn Asp.Net Core MVC tutorial from WebGentle YouTube channel free of cost.
 You can access webgebtle youtube channel by clicking [here](https://www.youtube.com/watch?v=CP-zbZA5LAc&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ)
 
 ## Kindly subscribe to Wegentle Youtube channel:
 Subscribe us: [Wegentle Youtube channel](https://bit.ly/webgentle)
 
 ## Who can learn from this tutorial:
-All prefessionals who wants to start their career in asp.net core framework and want to add new skill in their bucket, can learn asp.net core from this tutorial.
-* Freshers
+All professionals who wants to start their career in asp.net core framework and want to add new skill in their bucket, can learn asp.net core from this tutorial.
+* Fresher
 * Experienced 
 * Anyone who has basic knowledge of programming
 
 ## Key features of this course:
 * Free of cost - No need to pay anything
 * Complete and step by step solution
-* English language - Tutorial is available in english language
+* English language - Tutorial is available in English language
 * Excellent combination of Theory, practical example & Live application.
 
-## PreRequisite:
-No special knowlenge is required for this tutorial. But it will be helpful if have basic knowledge of
+## Prerequisite:
+No special knowledge is required for this tutorial. But it will be helpful if have basic knowledge of
 * C# (Class, Method, Property etc.)
 * OOPS Concepts
 * HTML & CSS
@@ -58,6 +58,12 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 29. [Design and develop a product detail page in asp.net core](https://www.youtube.com/watch?v=elJgXm1Fc80&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=29)
 30. [_ViewStart.cshtml file in asp.Net core](https://www.youtube.com/watch?v=ZiB1vqj-Y1g&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=30)
 31. [_ViewImports file in asp.net core](https://www.youtube.com/watch?v=rdag_suOGj4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=31)
+32. [ViewBag in Asp.Net Core MVC](https://www.youtube.com/watch?v=nbw50yMD3q0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=32)
+33. [ViewData in Asp.Net Core](https://www.youtube.com/watch?v=Clfw1GWNv58&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=33)
+34. [ViewData Attribute in Asp.Net Core](https://www.youtube.com/watch?v=Bf4WjnjZobk&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=34)
+35. [Dynamic views in asp.net core](https://www.youtube.com/watch?v=hOE3w9N23zQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=35)
+36. [Tag helpers in asp.net core](https://www.youtube.com/watch?v=YsyXTIoLeZQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=36)
+37. [Anchor Tag helper in Asp.Net Core](https://www.youtube.com/watch?v=xfUq_aMjL8w&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=37)
 
 
 To be added...

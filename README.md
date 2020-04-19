@@ -58,6 +58,12 @@ No special knowlenge is required for this tutorial. But it will be helpful if ha
 29. [Design and develop a product detail page in asp.net core](https://www.youtube.com/watch?v=elJgXm1Fc80&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=29)
 30. [_ViewStart.cshtml file in asp.Net core](https://www.youtube.com/watch?v=ZiB1vqj-Y1g&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=30)
 31. [_ViewImports file in asp.net core](https://www.youtube.com/watch?v=rdag_suOGj4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=31)
+32. [ViewBag in Asp.Net Core MVC](https://www.youtube.com/watch?v=nbw50yMD3q0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=32)
+33. [ViewData in Asp.Net Core](https://www.youtube.com/watch?v=Clfw1GWNv58&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=33)
+34. [ViewData Attribute in Asp.Net Core](https://www.youtube.com/watch?v=Bf4WjnjZobk&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=34)
+35. [Dynamic views in asp.net core](https://www.youtube.com/watch?v=hOE3w9N23zQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=35)
+36. [Tag helpers in asp.net core](https://www.youtube.com/watch?v=YsyXTIoLeZQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=36)
+37. [Anchor Tag helper in Asp.Net Core](https://www.youtube.com/watch?v=xfUq_aMjL8w&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=37)
 
 
 To be added...

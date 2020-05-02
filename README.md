@@ -64,7 +64,14 @@ No special knowledge is required for this tutorial. But it will be helpful if ha
 35. [Dynamic views in asp.net core](https://www.youtube.com/watch?v=hOE3w9N23zQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=35)
 36. [Tag helpers in asp.net core](https://www.youtube.com/watch?v=YsyXTIoLeZQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=36)
 37. [Anchor Tag helper in Asp.Net Core](https://www.youtube.com/watch?v=xfUq_aMjL8w&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=37)
-
+38. [ Image tag helper in asp.net core](https://www.youtube.com/watch?v=iJTiPHkTwGU&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=38)
+39. [Environment tag helper in asp.net core](https://www.youtube.com/watch?v=V9Ie2OvbAhs&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=39)
+40. [Link tag helper in asp.net core](https://www.youtube.com/watch?v=wYSh8jGsT50&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=40)
+41. [Create form in asp.net core](https://www.youtube.com/watch?v=hRjzu738zgE&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=41)
+42. [What is Entity Framework Core](https://www.youtube.com/watch?v=EGoYmjjU_Ko&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=42)
+43. [How to install entity framework (ef) core](https://www.youtube.com/watch?v=SWkyGXN8f9g&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=43)
+44. [How to setup DbContext class in entity framework core](https://www.youtube.com/watch?v=Yhmg5VJlSwY&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=44)
+45. [Generate database using entity framework core CLI](https://www.youtube.com/watch?v=xPgzPQKG5n8&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=45)
 
 To be added...
 

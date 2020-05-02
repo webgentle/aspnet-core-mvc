@@ -2,30 +2,42 @@
 @{
     ViewData["Title"] = "Add new book";
 }
-<div class="container">
-    <h3 class="display-4">Add new book</h3>
-    <form method="post" asp-action="AddNewBook" asp-controller="Book">
-        <div class="form-group">
-            <label asp-for="Title"></label>
-            <input asp-for="Title" class="form-control" />
-        </div>
+    <div class="container">
+        <h3 class="display-4">Add new book</h3>
+        <hr />
+        @if (ViewBag.IsSuccess)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Congratulations</strong> You should added new book successfully. <br />
+                Click <a asp-controller="Book" asp-action="GetBook" asp-route-id="@ViewBag.BookId">here</a> to view the details
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
 
-        <div class="form-group">
-            <label asp-for="Author"></label>
-            <input asp-for="Author" class="form-control" />
-        </div>
+        <form method="post" asp-action="AddNewBook" asp-controller="Book">
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+            </div>
 
-        <div class="form-group">
-            <label asp-for="Description"></label>
-            <textarea asp-for="Description" class="form-control"></textarea>
-        </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+            </div>
 
-        <div class="form-group">
-            <label asp-for="TotalPages"></label>
-            <input asp-for="TotalPages" class="form-control" />
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Add book" class="btn btn-primary" />
-        </div>
-    </form>
-</div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TotalPages" class="control-label"></label>
+                <input asp-for="TotalPages" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add book" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>

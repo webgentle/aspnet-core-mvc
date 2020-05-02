@@ -45,12 +45,12 @@ namespace Webgentle.BookStore.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddNewBook(BookModel bookModel)
+        public async Task<IActionResult> AddNewBook(BookModel bookModel)
         {
-            int id = _bookRepository.AddNewBook(bookModel);
+            int id = await _bookRepository.AddNewBook(bookModel);
             if (id > 0)
             {
-                return RedirectToAction(nameof(AddNewBook), new { isSuccess = true , bookId = id });
+                return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
             }
             return View();
         }

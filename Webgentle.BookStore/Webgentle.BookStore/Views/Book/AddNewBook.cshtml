@@ -5,10 +5,10 @@
     <div class="container">
         <h3 class="display-4">Add new book</h3>
         <hr />
-        @if (ViewBag.IsSuccess)
+        @if (ViewBag.IsSuccess == true)
         {
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Congratulations</strong> You should added new book successfully. <br />
+                <strong>Congratulations</strong> You have added new book successfully. <br />
                 Click <a asp-controller="Book" asp-action="GetBook" asp-route-id="@ViewBag.BookId">here</a> to view the details
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -20,21 +20,25 @@
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Author" class="control-label"></label>
                 <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
                 <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="TotalPages" class="control-label"></label>
                 <input asp-for="TotalPages" class="form-control" />
+                <span asp-validation-for="TotalPages" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Add book" class="btn btn-primary" />

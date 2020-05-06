@@ -72,8 +72,13 @@ No special knowledge is required for this tutorial. But it will be helpful if ha
 43. [How to install entity framework (ef) core](https://www.youtube.com/watch?v=SWkyGXN8f9g&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=43)
 44. [How to setup DbContext class in entity framework core](https://www.youtube.com/watch?v=Yhmg5VJlSwY&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=44)
 45. [Generate database using entity framework core CLI](https://www.youtube.com/watch?v=xPgzPQKG5n8&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=45)
+46. [Insert data in database using entity framework core](https://www.youtube.com/watch?v=cE_o8piz-2Y&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=46)
+47. [Making Async call using entity framework core](https://www.youtube.com/watch?v=O7NkoVMRS7M&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=47)
+48. [Get list of data from database using entity framework core](https://www.youtube.com/watch?v=4flp6MQTRhQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=48)
+49. [Get details of book from database](https://www.youtube.com/watch?v=AhMwkcvQc6w&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=49)
+50. [Model validations in asp.net core](https://www.youtube.com/watch?v=ckD1tLQfyH4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=50)
 
 To be added...
 
-## Contact Us:
-You can contact nitish on nitish@webgentle.com 
+## Contact the author:
+You can contact nitish on nitish@webgentle.com, nitish.webgentle@gmail.com

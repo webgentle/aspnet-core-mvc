@@ -55,9 +55,9 @@ namespace Webgentle.BookStore.Controllers
                     return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
                 }
             }
-            //ViewBag.IsSuccess = false;
-            //ViewBag.BookId = 0;
 
+            ModelState.AddModelError("", "This is my custom error message");
+            ModelState.AddModelError("", "This is my second custom error message");
 
             return View();
         }

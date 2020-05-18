@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Webgentle.BookStore.Models;
 using Webgentle.BookStore.Repository;
 
@@ -44,6 +45,8 @@ namespace Webgentle.BookStore.Controllers
                 Language = "English"
             };
 
+            ViewBag.Language = new SelectList(new List<string>() { "Hindi", "English", "Dutch"});
+
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;
             return View(model);
@@ -60,6 +63,8 @@ namespace Webgentle.BookStore.Controllers
                     return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
                 }
             }
+
+            ViewBag.Language = new SelectList(new List<string>() { "Hindi", "English", "Dutch" });
 
             ModelState.AddModelError("", "This is my custom error message");
             ModelState.AddModelError("", "This is my second custom error message");

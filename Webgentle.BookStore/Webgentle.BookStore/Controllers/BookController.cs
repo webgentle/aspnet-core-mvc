@@ -42,10 +42,10 @@ namespace Webgentle.BookStore.Controllers
         {
             var model = new BookModel()
             {
-                Language = "English"
+                Language = "2"
             };
 
-            ViewBag.Language = new SelectList(new List<string>() { "Hindi", "English", "Dutch"});
+            ViewBag.Language = new SelectList(GetLanguage(), "Id", "Text");
 
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;
@@ -64,12 +64,19 @@ namespace Webgentle.BookStore.Controllers
                 }
             }
 
-            ViewBag.Language = new SelectList(new List<string>() { "Hindi", "English", "Dutch" });
-
-            ModelState.AddModelError("", "This is my custom error message");
-            ModelState.AddModelError("", "This is my second custom error message");
+            ViewBag.Language = new SelectList(GetLanguage(), "Id", "Text");
 
             return View();
+        }
+
+        private List<LanguageModel> GetLanguage()
+        {
+            return new List<LanguageModel>()
+            {
+                new LanguageModel(){ Id = 1, Text = "Hindi"},
+                new LanguageModel(){ Id = 2, Text = "English"},
+                new LanguageModel(){ Id = 3, Text = "Dutch"},
+            };
         }
     }
 }

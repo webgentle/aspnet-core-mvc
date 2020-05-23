@@ -42,10 +42,16 @@ namespace Webgentle.BookStore.Controllers
         {
             var model = new BookModel()
             {
-                Language = "2"
+                //Language = "2"
             };
 
-            ViewBag.Language = new SelectList(GetLanguage(), "Id", "Text");
+            ViewBag.Language = new List<SelectListItem>()
+            {
+                new SelectListItem(){Text = "Hindi", Value = "1" },
+                new SelectListItem(){Text = "English", Value = "2", Disabled = true },
+                new SelectListItem(){Text = "Dutch", Value = "3", Selected = true },
+                new SelectListItem(){Text = "Tamil", Value = "4", Disabled = true },
+            };
 
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;

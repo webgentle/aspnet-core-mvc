@@ -77,6 +77,16 @@ No special knowledge is required for this tutorial. But it will be helpful if ha
 48. [Get list of data from database using entity framework core](https://www.youtube.com/watch?v=4flp6MQTRhQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=48)
 49. [Get details of book from database](https://www.youtube.com/watch?v=AhMwkcvQc6w&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=49)
 50. [Model validations in asp.net core](https://www.youtube.com/watch?v=ckD1tLQfyH4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=50)
+51. [Validation summary (asp-validation-summary attribute) in asp.net core](https://www.youtube.com/watch?v=5txrbp6D-gg&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=51)
+52. [DataType attribute in asp.net core (Generate form fields from model)](https://www.youtube.com/watch?v=9u0EOBNHvDE&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=52)
+53. [Dropdown in asp.net core (Create drop down using option tag)](https://www.youtube.com/watch?v=l6JhPyUZhHk&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=53)
+54. [Dropdown in asp.net core with text and value property ](https://www.youtube.com/watch?v=P1rWY4p7-S4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=54)
+55. [Dropdown in asp.net core using SelectList](https://www.youtube.com/watch?v=MUTUjxXHzzQ&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=55)
+56. [Create dropdown in asp.net core with text and value using SelectList](https://www.youtube.com/watch?v=KEpdE_Qozdk&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=56)
+57. [Create dropdown in asp.net core using SelectListItem](https://www.youtube.com/watch?v=pxp7itShsZ4&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=57)
+58. [Create group in asp.net core dropdown (SelectListGroup)](https://www.youtube.com/watch?v=RvzNiEUhs9Q&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=58)
+59. [Multiselect dropdown in asp.net core](https://www.youtube.com/watch?v=n2gTAdpkvLg&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=59)
+60. [Create dropdown using Enum in asp.net core](https://www.youtube.com/watch?v=0JDxnjcH_v0&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ&index=60)
 
 To be added...
 

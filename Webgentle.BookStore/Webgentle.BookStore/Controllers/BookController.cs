@@ -45,18 +45,14 @@ namespace Webgentle.BookStore.Controllers
                 //Language = "2"
             };
 
-            var group1 = new SelectListGroup() { Name = "Group 1" };
-            var group2 = new SelectListGroup() { Name = "Group 2", Disabled = true };
-            var group3 = new SelectListGroup() { Name = "Group 3" };
-
             ViewBag.Language = new List<SelectListItem>()
             {
-                new SelectListItem(){Text = "Hindi", Value = "1", Group = group1 },
-                new SelectListItem(){Text = "English", Value = "2", Group = group1 },
-                new SelectListItem(){Text = "Dutch", Value = "3", Group = group2},
-                new SelectListItem(){Text = "Tamil", Value = "4", Group = group2 },
-                new SelectListItem(){Text = "Urdu", Value = "5" , Group = group3},
-                new SelectListItem(){Text = "Chinese", Value = "6", Group = group3 },
+                new SelectListItem(){Text = "Hindi", Value = "1" },
+                new SelectListItem(){Text = "English", Value = "2" },
+                new SelectListItem(){Text = "Dutch", Value = "3"},
+                new SelectListItem(){Text = "Tamil", Value = "4"},
+                new SelectListItem(){Text = "Urdu", Value = "5" },
+                new SelectListItem(){Text = "Chinese", Value = "6"},
             };
 
             ViewBag.IsSuccess = isSuccess;
@@ -76,7 +72,16 @@ namespace Webgentle.BookStore.Controllers
                 }
             }
 
-            ViewBag.Language = new SelectList(GetLanguage(), "Id", "Text");
+           
+            ViewBag.Language = new List<SelectListItem>()
+            {
+                new SelectListItem(){Text = "Hindi", Value = "1" },
+                new SelectListItem(){Text = "English", Value = "2" },
+                new SelectListItem(){Text = "Dutch", Value = "3"},
+                new SelectListItem(){Text = "Tamil", Value = "4"},
+                new SelectListItem(){Text = "Urdu", Value = "5" },
+                new SelectListItem(){Text = "Chinese", Value = "6"},
+            };
 
             return View();
         }

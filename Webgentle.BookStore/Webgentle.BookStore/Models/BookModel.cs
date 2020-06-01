@@ -19,11 +19,8 @@ namespace Webgentle.BookStore.Models
         public string Description { get; set; }
         public string Category { get; set; }
         //[Required(ErrorMessage = "Please choose the language of your book")]
+        public int LanguageId { get; set; }
         public string Language { get; set; }
-
-        [Required(ErrorMessage = "Please choose the language of your book")]
-        public LanguageEnum LanguageEnum { get; set; }
-
 
         [Required(ErrorMessage = "Please enter the total pages")]
         [Display(Name ="Total pages of book")]

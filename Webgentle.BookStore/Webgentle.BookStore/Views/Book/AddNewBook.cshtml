@@ -21,11 +21,11 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="form-group">
-            <label asp-for="LanguageEnum" class="control-label"></label>
-            <select asp-for="LanguageEnum" class="form-control" asp-items="Html.GetEnumSelectList<LanguageEnum>()">
+            <label asp-for="LanguageId" class="control-label"></label>
+            <select asp-for="LanguageId" class="form-control" asp-items="ViewBag.Language">
                 <option value="">Please choose your language</option>
             </select>
-            <span asp-validation-for="LanguageEnum" class="text-danger"></span>
+            <span asp-validation-for="LanguageId" class="text-danger"></span>
         </div>
 
         <div class="form-group">

@@ -17,7 +17,16 @@
         </div>
     }
 
-    <form method="post" asp-action="AddNewBook" asp-controller="Book">
+    <div class="d-flex justify-content-center" >
+        <div class="spinner-border" role="status" id="myLoader" style="display:none;">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <form method="post" data-ajax="true" data-ajax-complete="myComplete"
+          data-ajax-success="mySuccess" ata-ajax-failure="myFailure"
+          data-ajax-loading="#myLoader"
+          asp-action="AddNewBook" asp-controller="Book">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="form-group">
@@ -56,3 +65,23 @@
         </div>
     </form>
 </div>
+
+@section scripts {
+    <script>
+        function myComplete(data) {
+            alert("I am from complete");
+            console.log(data);
+        }
+
+        function mySuccess(data) {
+            alert("I am from success");
+            console.log(data);
+        }
+
+        function myFailure(data) {
+            alert("I am from failure");
+            console.log(data);
+        }
+    </script>
+
+}

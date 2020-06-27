@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using Webgentle.BookStore.Enums;
+using Microsoft.AspNetCore.Http;
 
 namespace Webgentle.BookStore.Models
 {
@@ -25,5 +26,10 @@ namespace Webgentle.BookStore.Models
         [Required(ErrorMessage = "Please enter the total pages")]
         [Display(Name ="Total pages of book")]
         public int? TotalPages { get; set; }
+
+        [Display(Name = "Choose the cover photo of your book")]
+        [Required]
+        public IFormFile CoverPhoto { get; set; }
+        public string CoverImageUrl { get; set; }
     }
 }

@@ -60,6 +60,15 @@
         </div>
         <span asp-validation-for="CoverPhoto" class="text-danger"></span>
     </div>
+
+    <div class="form-group">
+        <label asp-for="GalleryFiles" class="control-label"></label>
+        <div class="custom-file">
+            <input asp-for="GalleryFiles" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+        </div>
+        <span asp-validation-for="GalleryFiles" class="text-danger"></span>
+    </div>
     <div class="form-group">
         <input type="submit" value="Add book" class="btn btn-primary" />
     </div>

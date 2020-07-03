@@ -4,102 +4,121 @@
 @model BookModel
 
 
-<div class="container">
-    <h3 class="display-4">Book details</h3>
-    <div class="row">
-        <div class="col-md-6">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-
-                    @for (int i = 0; i < Model.Gallery.Count(); i++)
-                    {
-                        <li data-target="#carouselExampleIndicators" data-slide-to="@i" class="@(i==0 ? "active" : "") "></li>
-                    }
-                </ol>
-                <div class="carousel-inner">
-                    @for (int i = 0; i < Model.Gallery.Count(); i++)
-                    {
-                        <div class="@(i==0 ? "carousel-item active" : "carousel-item") ">
-                            <img class="d-block w-100" src="@Model.Gallery[i].URL" alt="@Model.Gallery[i].Name">
-                        </div>
-                    }
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>@Model.Title</h1>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 text-primary">
-                    <span class="label label-primary">By: </span>
-                    <span class="monospaced">@Model.Author</span>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="description">
-                        @Model.Description
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <button class="btn btn-outline-primary">
-                        Read now
-                    </button>
-                </div>
-            </div>
-
-            <hr />
-
-            <ul class="list-group">
-                <li class="list-group-item"><span class="font-weight-bold">Category - </span> @Model.Category</li>
-                <li class="list-group-item"><span class="font-weight-bold">Total pages - </span> @Model.TotalPages</li>
-                <li class="list-group-item"><span class="font-weight-bold">Language - </span> @Model.Language</li>
-            </ul>
-        </div>
-    </div>
-
-    <hr />
-
-    <div class="py-5 bg-light" id="similarBooks">
-        <h3 class="h3">Similar books</h3>
+    <div class="container">
+        <h3 class="display-4">Book details</h3>
         <div class="row">
-            @for (int i = 0; i < 5; i++)
-            {
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <h3 class="card-title">book.Title</h3>
-                            <p class="card-text">book.Description</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+
+                        @for (int i = 0; i < Model.Gallery.Count(); i++)
+                        {
+                            <li data-target="#carouselExampleIndicators" data-slide-to="@i" class="@(i==0 ? "active" : "") "></li>
+                        }
+                    </ol>
+                    <div class="carousel-inner">
+                        @for (int i = 0; i < Model.Gallery.Count(); i++)
+                        {
+                            <div class="@(i==0 ? "carousel-item active" : "carousel-item") ">
+                                <img class="d-block w-100" src="@Model.Gallery[i].URL" alt="@Model.Gallery[i].Name">
+                            </div>
+                        }
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>@Model.Title</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-primary">
+                        <span class="label label-primary">By: </span>
+                        <span class="monospaced">@Model.Author</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="description">
+                            @Model.Description
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                            Read now
+                        </a>
+                    </div>
+                </div>
+
+                <hr />
+
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="font-weight-bold">Category - </span> @Model.Category</li>
+                    <li class="list-group-item"><span class="font-weight-bold">Total pages - </span> @Model.TotalPages</li>
+                    <li class="list-group-item"><span class="font-weight-bold">Language - </span> @Model.Language</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       @*<embed src="@Model.BookPdfUrl" class="w-100"/>*@
+                        <iframe src="@Model.BookPdfUrl" class="w-100"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="py-5 bg-light" id="similarBooks">
+            <h3 class="h3">Similar books</h3>
+            <div class="row">
+                @for (int i = 0; i < 5; i++)
+                {
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                            <div class="card-body">
+                                <h3 class="card-title">book.Title</h3>
+                                <p class="card-text">book.Description</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View details</a>
+                                    </div>
+                                    <small class="text-muted">book.Author</small>
                                 </div>
-                                <small class="text-muted">book.Author</small>
                             </div>
                         </div>
                     </div>
-                </div>
-            }
+                }
 
+            </div>
         </div>
     </div>
-</div>
 

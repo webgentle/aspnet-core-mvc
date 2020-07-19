@@ -1,6 +1,4 @@
-﻿@{ 
-    ViewData["Title"] = "Home";
-}
+﻿@{ ViewData["Title"] = "Home"; }
 <section class="jumbotron text-center">
     <div class="container">
         <h1>Welcome to Bookstore</h1>
@@ -20,13 +18,22 @@
         <h3 class="h3">Top books</h3>
         <div class="row">
             <div class="col-md-4">
-                <partial name="_bookThumbnail" model="new BookModel()" />
+                @*<partial name="_bookThumbnail" model="new BookModel()" />*@
+                @Html.Partial("_bookThumbnail", new BookModel())
             </div>
             <div class="col-md-4">
-                <partial name="_bookThumbnail" model="new BookModel()" />
+                @*<partial name="_bookThumbnail" model="new BookModel()" />*@
+                @await Html.PartialAsync("_bookThumbnail", new BookModel())
             </div>
             <div class="col-md-4">
-                <partial name="_bookThumbnail" model="new BookModel()" />
+                @*<partial name="_bookThumbnail" model="new BookModel()" />*@
+                @{ Html.RenderPartial("_bookThumbnail", new BookModel()); }
+
+            </div>
+            <div class="col-md-4">
+                @*<partial name="_bookThumbnail" model="new BookModel()" />*@
+                @{ await Html.RenderPartialAsync("_bookThumbnail", new BookModel()); }
+
             </div>
         </div>
     </div>

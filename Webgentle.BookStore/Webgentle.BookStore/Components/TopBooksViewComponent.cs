@@ -9,9 +9,9 @@ namespace Webgentle.BookStore.Components
 {
     public class TopBooksViewComponent : ViewComponent
     {
-        private readonly BookRepository _bookRepository;
+        private readonly IBookRepository _bookRepository;
 
-        public TopBooksViewComponent(BookRepository bookRepository)
+        public TopBooksViewComponent(IBookRepository bookRepository)
         {
             _bookRepository = bookRepository;
         }

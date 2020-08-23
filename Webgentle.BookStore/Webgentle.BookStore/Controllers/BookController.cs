@@ -27,6 +27,7 @@ namespace Webgentle.BookStore.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
+        [Route("all-books")]
         public async Task<ViewResult> GetAllBooks()
         {
             var data = await _bookRepository.GetAllBooks();
@@ -34,7 +35,7 @@ namespace Webgentle.BookStore.Controllers
             return View(data);
         }
 
-        [Route("book-details/{id}", Name = "bookDetailsRoute")]
+        [Route("book-details/{id:int:min(1)}", Name = "bookDetailsRoute")]
         public async Task<ViewResult> GetBook(int id)
         {
             var data = await _bookRepository.GetBookById(id);

@@ -1,11 +1,11 @@
-﻿@inject Webgentle.BookStore.Repository.IBookRepository _bookRepo
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration _configuration
 
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="~/images/logo.png" width="30" height="30" asp-append-version="true" />
-                @_bookRepo.GetAppName()
+              @_configuration["AppName"]
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

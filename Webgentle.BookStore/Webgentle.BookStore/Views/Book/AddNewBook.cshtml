@@ -1,4 +1,5 @@
 ﻿@using  Webgentle.BookStore.Enums
+@inject Webgentle.BookStore.Repository.ILanguageRepository _languageRepo
 @model BookModel
 @{
     ViewData["Title"] = "Add new book";
@@ -22,7 +23,7 @@
 
     <div class="form-group">
         <label asp-for="LanguageId" class="control-label"></label>
-        <select asp-for="LanguageId" class="form-control" asp-items="ViewBag.Language">
+        <select asp-for="LanguageId" class="form-control" asp-items="(await _languageRepo.GetLanguages()).Select(x=> new SelectListItem() { Text = x.Name, Value = x.Id.ToString()})">
             <option value="">Please choose your language</option>
         </select>
         <span asp-validation-for="LanguageId" class="text-danger"></span>

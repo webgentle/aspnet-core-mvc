@@ -52,8 +52,6 @@ namespace Webgentle.BookStore.Controllers
         {
             var model = new BookModel();
 
-            ViewBag.Language = new SelectList(await _languageRepository.GetLanguages(), "Id", "Name");
-
             ViewBag.IsSuccess = isSuccess;
             ViewBag.BookId = bookId;
             return View(model);
@@ -99,9 +97,6 @@ namespace Webgentle.BookStore.Controllers
                     return RedirectToAction(nameof(AddNewBook), new { isSuccess = true, bookId = id });
                 }
             }
-
-            ViewBag.Language = new SelectList(await _languageRepository.GetLanguages(), "Id", "Name");
-
 
             return View();
         }

@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Webgentle.BookStore.Data;
+using Webgentle.BookStore.Models;
 using Webgentle.BookStore.Repository;
 
 namespace Webgentle.BookStore
@@ -44,6 +45,9 @@ namespace Webgentle.BookStore
 #endif
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ILanguageRepository, LanguageRepository>();
+            services.AddSingleton<IMessageRepository, MessageRepository>();
+
+            services.Configure<NewBookAlertConfig>(_configuration.GetSection("NewBookAlert"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,11 +1,16 @@
-﻿@inject Microsoft.Extensions.Configuration.IConfiguration _configuration
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration _configuration
+@inject Microsoft.Extensions.Options.IOptionsSnapshot<NewBookAlertConfig> _newBookAlertconfiguration
+@{ 
+    var newBookAlertconfiguration = _newBookAlertconfiguration.Value;
+}
 
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="~/images/logo.png" width="30" height="30" asp-append-version="true" />
-              @_configuration["AppName"]
+                @_configuration["AppName"]
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,4 +43,12 @@
             </div>
         </div>
     </nav>
+
+    @if (newBookAlertconfiguration.DisplayNewBookAlert)
+    {
+        <div class="alert alert-info" role="alert">
+            @newBookAlertconfiguration.BookName
+        </div>
+    }
+
 </header>

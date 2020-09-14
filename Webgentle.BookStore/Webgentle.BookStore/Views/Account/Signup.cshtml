@@ -1,0 +1,69 @@
+﻿@model Webgentle.BookStore.Models.SignUpUserModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Signup</title>
+    <environment include="Development">
+        <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        @*<link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />*@
+
+        <link rel="stylesheet"
+              href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/twitter-bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              integrity=""
+              crossorigin="anonymous">
+    </environment>
+</head>
+<body>
+    <div class="container">
+
+        <h4>Sign up</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Signup">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="control-label"></label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <img src="~/images/signup.png" class="img-fluid" />
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+    </div>
+</body>
+</html>

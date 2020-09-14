@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +33,9 @@ namespace Webgentle.BookStore
         {
             services.AddDbContext<BookStoreContext>(
                 options => options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<BookStoreContext>();
 
             services.AddControllersWithViews();
 #if DEBUG
@@ -62,6 +66,8 @@ namespace Webgentle.BookStore
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

@@ -47,7 +47,8 @@ namespace Webgentle.BookStore
             services.AddScoped<ILanguageRepository, LanguageRepository>();
             services.AddSingleton<IMessageRepository, MessageRepository>();
 
-            services.Configure<NewBookAlertConfig>(_configuration.GetSection("NewBookAlert"));
+            services.Configure<NewBookAlertConfig>("InternalBook",_configuration.GetSection("NewBookAlert"));
+            services.Configure<NewBookAlertConfig>("ThirdPartyBook",_configuration.GetSection("ThirdPartyBook"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -15,7 +15,7 @@
 else
 {
     <li class="nav-item">
-        <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Context.Request.Path">Login</a>
         <a class="btn btn-primary" asp-controller="Account" asp-action="Signup">Register</a>
     </li>
 }

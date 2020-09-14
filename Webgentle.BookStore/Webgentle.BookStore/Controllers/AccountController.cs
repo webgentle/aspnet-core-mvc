@@ -42,6 +42,7 @@ namespace Webgentle.BookStore.Controllers
                 }
 
                 ModelState.Clear();
+                return View();
             }
 
             return View(userModel);

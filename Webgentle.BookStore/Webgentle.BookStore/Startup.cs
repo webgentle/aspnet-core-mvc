@@ -16,6 +16,7 @@ using Webgentle.BookStore.Data;
 using Webgentle.BookStore.Helpers;
 using Webgentle.BookStore.Models;
 using Webgentle.BookStore.Repository;
+using Webgentle.BookStore.Service;
 
 namespace Webgentle.BookStore
 {
@@ -67,6 +68,7 @@ namespace Webgentle.BookStore
             services.AddScoped<ILanguageRepository, LanguageRepository>();
             services.AddSingleton<IMessageRepository, MessageRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IUserService, UserService>();
 
             services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
 

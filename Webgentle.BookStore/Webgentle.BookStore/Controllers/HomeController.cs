@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Webgentle.BookStore.Models;
 using Webgentle.BookStore.Repository;
+using Webgentle.BookStore.Service;
 
 namespace Webgentle.BookStore.Controllers
 {
@@ -15,18 +16,26 @@ namespace Webgentle.BookStore.Controllers
         private readonly NewBookAlertConfig _newBookAlertconfiguration;
         private readonly NewBookAlertConfig _thirdPartyBookconfiguration;
         private readonly IMessageRepository _messageRepository;
+        private readonly IUserService _userService;
 
-        public HomeController(IOptionsSnapshot<NewBookAlertConfig> newBookAlertconfiguration, IMessageRepository messageRepository)
+        public HomeController(IOptionsSnapshot<NewBookAlertConfig> newBookAlertconfiguration, 
+            IMessageRepository messageRepository,
+            IUserService userService)
         {
             _newBookAlertconfiguration = newBookAlertconfiguration.Get("InternalBook");
             _thirdPartyBookconfiguration = newBookAlertconfiguration.Get("ThirdPartyBook");
             _messageRepository = messageRepository;
+            _userService = userService;
         }
 
         public ViewResult Index()
         {
-            bool isDisplay = _newBookAlertconfiguration.DisplayNewBookAlert;
-            bool isDisplay1 = _thirdPartyBookconfiguration.DisplayNewBookAlert;
+
+            //var userId = _userService.GetUserId();
+            //var isLoggedIn = _userService.IsAuthenticated();
+
+            //bool isDisplay = _newBookAlertconfiguration.DisplayNewBookAlert;
+            //bool isDisplay1 = _thirdPartyBookconfiguration.DisplayNewBookAlert;
 
             //var value = _messageRepository.GetName();
 

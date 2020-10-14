@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Webgentle.BookStore.Data;
+using Webgentle.BookStore.Helpers;
 using Webgentle.BookStore.Models;
 using Webgentle.BookStore.Repository;
 
@@ -66,6 +67,8 @@ namespace Webgentle.BookStore
             services.AddScoped<ILanguageRepository, LanguageRepository>();
             services.AddSingleton<IMessageRepository, MessageRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
 
             services.Configure<NewBookAlertConfig>("InternalBook", _configuration.GetSection("NewBookAlert"));
             services.Configure<NewBookAlertConfig>("ThirdPartyBook", _configuration.GetSection("ThirdPartyBook"));

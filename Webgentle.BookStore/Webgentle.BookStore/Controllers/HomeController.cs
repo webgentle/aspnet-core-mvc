@@ -17,19 +17,29 @@ namespace Webgentle.BookStore.Controllers
         private readonly NewBookAlertConfig _thirdPartyBookconfiguration;
         private readonly IMessageRepository _messageRepository;
         private readonly IUserService _userService;
+        private readonly IEmailService _emailService;
 
-        public HomeController(IOptionsSnapshot<NewBookAlertConfig> newBookAlertconfiguration, 
+        public HomeController(IOptionsSnapshot<NewBookAlertConfig> newBookAlertconfiguration,
             IMessageRepository messageRepository,
-            IUserService userService)
+            IUserService userService,
+            IEmailService emailService)
         {
             _newBookAlertconfiguration = newBookAlertconfiguration.Get("InternalBook");
             _thirdPartyBookconfiguration = newBookAlertconfiguration.Get("ThirdPartyBook");
             _messageRepository = messageRepository;
             _userService = userService;
+            _emailService = emailService;
         }
 
-        public ViewResult Index()
+        public async Task<ViewResult> Index()
         {
+
+            UserEmailOptions options = new UserEmailOptions
+            {
+                ToEmails = new List<string>() { "test@gmail.com"}
+            };
+
+            await _emailService.SendTestEmail(options);
 
             //var userId = _userService.GetUserId();
             //var isLoggedIn = _userService.IsAuthenticated();

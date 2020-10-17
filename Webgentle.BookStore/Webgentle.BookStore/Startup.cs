@@ -69,9 +69,11 @@ namespace Webgentle.BookStore
             services.AddSingleton<IMessageRepository, MessageRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IEmailService, EmailService>();
 
             services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
 
+            services.Configure<SMTPConfigModel>(_configuration.GetSection("SMTPConfig"));
             services.Configure<NewBookAlertConfig>("InternalBook", _configuration.GetSection("NewBookAlert"));
             services.Configure<NewBookAlertConfig>("ThirdPartyBook", _configuration.GetSection("ThirdPartyBook"));
         }

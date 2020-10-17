@@ -17,7 +17,7 @@ namespace Webgentle.BookStore.Repository
         private readonly IEmailService _emailService;
         private readonly IConfiguration _configuration;
 
-        public AccountRepository(UserManager<ApplicationUser> userManager, 
+        public AccountRepository(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IUserService userService,
             IEmailService emailService,
@@ -66,7 +66,13 @@ namespace Webgentle.BookStore.Repository
         {
             var userId = _userService.GetUserId();
             var user = await _userManager.FindByIdAsync(userId);
-           return await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+            return await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+        }
+
+
+        public async Task<IdentityResult> ConfirmEmailAsync(string uid, string token)
+        {
+            return await _userManager.ConfirmEmailAsync(await _userManager.FindByIdAsync(uid), token);
         }
 
         private async Task SendEmailConfirmationEmail(ApplicationUser user, string token)
@@ -80,7 +86,7 @@ namespace Webgentle.BookStore.Repository
                 PlaceHolders = new List<KeyValuePair<string, string>>()
                 {
                     new KeyValuePair<string, string>("{{UserName}}", user.FirstName),
-                    new KeyValuePair<string, string>("{{Link}}", 
+                    new KeyValuePair<string, string>("{{Link}}",
                         string.Format(appDomain + confirmationLink, user.Id, token))
                 }
             };

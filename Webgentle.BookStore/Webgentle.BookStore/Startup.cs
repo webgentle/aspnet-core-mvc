@@ -37,7 +37,7 @@ namespace Webgentle.BookStore
                 options => options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<BookStoreContext>();
+                .AddEntityFrameworkStores<BookStoreContext>().AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
             {

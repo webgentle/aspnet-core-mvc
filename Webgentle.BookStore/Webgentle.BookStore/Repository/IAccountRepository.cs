@@ -6,6 +6,8 @@ namespace Webgentle.BookStore.Repository
 {
     public interface IAccountRepository
     {
+        Task<ApplicationUser> GetUserByEmailAsync(string email);
+
         Task<IdentityResult> CreateUserAsync(SignUpUserModel userModel);
 
         Task<SignInResult> PasswordSignInAsync(SignInModel signInModel);
@@ -15,5 +17,7 @@ namespace Webgentle.BookStore.Repository
         Task<IdentityResult> ChangePasswordAsync(ChangePasswordModel model);
 
         Task<IdentityResult> ConfirmEmailAsync(string uid, string token);
+
+        Task GenerateEmailConfirmationTokenAsync(ApplicationUser user);
     }
 }

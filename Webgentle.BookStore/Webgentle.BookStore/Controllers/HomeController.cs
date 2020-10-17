@@ -34,12 +34,16 @@ namespace Webgentle.BookStore.Controllers
         public async Task<ViewResult> Index()
         {
 
-            UserEmailOptions options = new UserEmailOptions
-            {
-                ToEmails = new List<string>() { "test@gmail.com"}
-            };
+            //UserEmailOptions options = new UserEmailOptions
+            //{
+            //    ToEmails = new List<string>() { "test@gmail.com"},
+            //    PlaceHolders = new List<KeyValuePair<string, string>>()
+            //    {
+            //        new KeyValuePair<string, string>("{{UserName}}", "John")
+            //    }
+            //};
 
-            await _emailService.SendTestEmail(options);
+            //await _emailService.SendTestEmail(options);
 
             //var userId = _userService.GetUserId();
             //var isLoggedIn = _userService.IsAuthenticated();

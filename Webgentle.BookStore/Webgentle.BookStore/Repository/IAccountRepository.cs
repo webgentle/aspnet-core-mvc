@@ -21,5 +21,7 @@ namespace Webgentle.BookStore.Repository
         Task GenerateEmailConfirmationTokenAsync(ApplicationUser user);
 
         Task GenerateForgotPasswordTokenAsync(ApplicationUser user);
+
+        Task<IdentityResult> ResetPasswordAsync(ResetPasswordModel model);
     }
 }

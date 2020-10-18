@@ -19,5 +19,7 @@ namespace Webgentle.BookStore.Repository
         Task<IdentityResult> ConfirmEmailAsync(string uid, string token);
 
         Task GenerateEmailConfirmationTokenAsync(ApplicationUser user);
+
+        Task GenerateForgotPasswordTokenAsync(ApplicationUser user);
     }
 }

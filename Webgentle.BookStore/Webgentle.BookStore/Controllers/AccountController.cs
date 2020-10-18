@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Webgentle.BookStore.Models;
 using Webgentle.BookStore.Repository;
@@ -159,6 +160,30 @@ namespace Webgentle.BookStore.Controllers
             else
             {
                 ModelState.AddModelError("", "Something went wrong.");
+            }
+            return View(model);
+        }
+
+        [AllowAnonymous, HttpGet("fotgot-password")]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [AllowAnonymous, HttpPost("fotgot-password")]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // code here
+                var user = await _accountRepository.GetUserByEmailAsync(model.Email);
+                if (user != null)
+                {
+                  await  _accountRepository.GenerateForgotPasswordTokenAsync(user);
+                }
+
+                ModelState.Clear();
+                model.EmailSent = true;
             }
             return View(model);
         }

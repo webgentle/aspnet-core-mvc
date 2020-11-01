@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System;
@@ -69,6 +70,8 @@ namespace Webgentle.BookStore.Controllers
             return View();
         }
 
+        // Uncomment the below line to enable roles on this action method.
+        //[Authorize(Roles ="Admin,User")]
         public ViewResult ContactUs()
         {
             return View();

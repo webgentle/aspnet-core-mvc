@@ -6,10 +6,10 @@ You can learn Asp.Net Core MVC tutorial from WebGentle YouTube channel free of c
 You can access webgebtle youtube channel by clicking [here](https://www.youtube.com/watch?v=CP-zbZA5LAc&list=PLaFzfwmPR7_LTXu0Vz9Zz_Y0OMMC7ArHZ)
 
 ## Kindly subscribe to Wegentle Youtube channel:
-Subscribe us: [Wegentle Youtube channel](https://bit.ly/webgentle)
+Subscribe to us: [WebGentle Youtube channel](https://bit.ly/webgentle)
 
 ## Who can learn from this tutorial:
-All professionals who wants to start their career in asp.net core framework and want to add new skill in their bucket, can learn asp.net core from this tutorial.
+All professionals who want to start their career in asp.net core framework and want to add new skill in their bucket, can learn asp.net core from this tutorial.
 * Fresher
 * Experienced 
 * Anyone who has basic knowledge of programming

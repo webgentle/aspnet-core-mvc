@@ -18,10 +18,13 @@ jobs:
       with:
         dotnet-version: 3.1.x
     - name: Restore dependencies
+      working-directory: ./Webgentle.BookStore
       run: dotnet restore
     - name: Build
+      working-directory: ./Webgentle.BookStore
       run: dotnet build **/*.csproj --configuration Release
     - name: Publish
+      working-directory: ./Webgentle.BookStore
       run: dotnet publish **/*.csproj -c Release -o ./publish
     - name: Publish Artifact
       uses: actions/upload-artifact@v2

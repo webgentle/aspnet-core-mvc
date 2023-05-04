@@ -40,5 +40,5 @@ jobs:
         aws-region: us-west-2
       
     - name: deploy app to s3 bucket
-      run: aws s3 sync ./publish s3://mihir-dotnet-apps --delete
+      run: aws s3 sync ./Webgentle.BookStore/publish s3://mihir-dotnet-apps --delete
       

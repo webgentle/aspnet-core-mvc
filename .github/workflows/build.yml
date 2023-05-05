@@ -33,7 +33,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: MyProject
-        working-directory: ./Webgentle.BookStore
         path: ../site
     
     - name: Deploy to AWS Beanstack

@@ -28,7 +28,7 @@ jobs:
       run: dotnet publish -r win10-x64 --configuration "Release" --self-contained "true" -o ../site
     - name: Generate deployment package 
       working-directory: ./Webgentle.BookStore
-      run: cd site; zip ../site.zip *; cd ..; zip myapp.zip site.zip aws-windows-deployment-manifest.json
+      run: zip ../site.zip *; cd ..; zip myapp.zip site.zip aws-windows-deployment-manifest.json
     - name: Publish Artifact
       uses: actions/upload-artifact@v2
       with:

@@ -25,24 +25,20 @@ jobs:
       run: dotnet build **/*.csproj --configuration Release
     - name: Publish
       working-directory: ./Webgentle.BookStore
-      run: dotnet publish -r win10-x64 --configuration "Release" --self-contained "true" -o ../site
-    - name: Generate deployment package 
-      working-directory: ./Webgentle.BookStore
-      run: zip ../site.zip *; cd ..; zip myapp.zip site.zip aws-windows-deployment-manifest.json
+      run: dotnet publish **/*.csproj -c Release -o ./publish
     - name: Publish Artifact
       uses: actions/upload-artifact@v2
       with:
         name: MyProject
-        path: myapp.zip
+        path: ./Webgentle.BookStore/publish
     
-    - name: Deploy to AWS Beanstack
-      uses: einaregilsson/beanstalk-deploy@v16
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: myapplication
-        environment_name: myenvironment
-        version_label: ${{ github.run_id }}
-        region: us-west-2
-        deployment_package: myapp.zip
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-2
+      
+    - name: deploy app to s3 bucket
+      run: aws s3 sync ./Webgentle.BookStore/publish s3://mihir-dotnet-apps --delete
       

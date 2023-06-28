@@ -40,7 +40,7 @@ jobs:
     - name: Publish Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: MyProject
+        name: MyProject-${{ github.sha }}
         path: ./Webgentle.BookStore/publish
     
 #     - name: Configure AWS Credentials

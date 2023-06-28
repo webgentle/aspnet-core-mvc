@@ -13,9 +13,9 @@ on:
         type: choice
         description: Make a choice
         options:
-        - foo
-        - bar
-        - baz
+        - 1
+        - 2
+        - 3
 
 jobs:
   build-and-deploy:

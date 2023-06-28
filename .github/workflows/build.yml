@@ -1,10 +1,6 @@
 name: .NET
 
 on:
-  push:
-    branches: [ master,mihir-gautam-patch-1 ]
-  pull_request:
-    branches: [ master ]
   workflow_dispatch:
     inputs:
       environment:

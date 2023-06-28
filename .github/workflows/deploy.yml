@@ -13,9 +13,9 @@ on:
         type: choice
         description: Make a choice
         options:
-        - foo
-        - bar
-        - baz
+        - MyProject-${{ github.sha }}
+        - 2
+        - 3
 
 jobs:
   build-and-deploy:

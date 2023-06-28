@@ -31,17 +31,6 @@ jobs:
     - name: Restore dependencies
       working-directory: ./Webgentle.BookStore
       run: dotnet restore
-    - name: Build
-      working-directory: ./Webgentle.BookStore
-      run: dotnet build **/*.csproj --configuration Release
-    - name: Publish
-      working-directory: ./Webgentle.BookStore
-      run: dotnet publish **/*.csproj -c Release -o ./publish
-    - name: Publish Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: MyProject
-        path: ./Webgentle.BookStore/publish
     
 #     - name: Configure AWS Credentials
 #       uses: aws-actions/configure-aws-credentials@v1

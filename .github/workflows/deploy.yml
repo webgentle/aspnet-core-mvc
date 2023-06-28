@@ -1,0 +1,55 @@
+name: .NET
+
+on:
+workflow_dispatch:
+inputs:
+  environment:
+    type: environment
+    description: Select the environment
+  boolean:
+    type: boolean
+    description: True or False
+  choice:
+    type: choice
+    description: Make a choice
+    options:
+    - 1
+    - 2
+    - 3
+
+jobs:
+only-deploy:
+
+runs-on: ubuntu-latest
+
+steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+    - name: Restore dependencies 
+      working-directory: ./Webgentle.BookStore
+      run: dotnet restore
+    - name: Build
+      working-directory: ./Webgentle.BookStore
+      run: dotnet build **/*.csproj --configuration Release
+    - name: Publish
+      working-directory: ./Webgentle.BookStore
+      run: dotnet publish **/*.csproj -c Release -o ./publish
+    - name: Publish Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: MyProject
+        path: ./Webgentle.BookStore/publish
+
+#     - name: Configure AWS Credentials
+#       uses: aws-actions/configure-aws-credentials@v1
+#       with:
+#         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#         aws-region: us-west-2
+  
+#     - name: deploy app to s3 bucket
+#       run: aws s3 sync ./Webgentle.BookStore/publish s3://mihir-dotnet-apps --delete
+  
